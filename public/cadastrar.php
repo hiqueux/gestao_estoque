@@ -9,14 +9,7 @@ $preco = $_POST["preco"] ?? "";
 $quantidade_estoque = $_POST["quantidade_estoque"] ?? "";
 $data_validade = $_POST["data_validade"] ?? "";
 
-if (
-    $nome === "" ||
-    $categoria === "" ||
-    $descricao === "" ||
-    $preco === "" ||
-    $quantidade_estoque === "" ||
-    $data_validade === ""
-) {
+if ($nome === "" || $categoria === "" || $descricao === "" || $preco === "" || $quantidade_estoque === "" || $data_validade === "") {
     die("Todos os campos são obrigatórios.");
 }
 
