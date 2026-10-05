@@ -22,7 +22,6 @@ $resultado = $stmt->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão de Estoque</title>
 </head>
-
 <body>
 
     <h1>GESTÃO DE ESTOQUE</h1>
@@ -33,28 +32,42 @@ $resultado = $stmt->get_result();
         <label for="nome"> Nome: </label>
         <input type="text" id="nome" name="nome" required>
 
+        <br><br>
+        
         <label for="categoria"> Categoria: </label>
         <input type="text" id="categoria" name="categoria" required>
+        
+        <br><br>
 
         <label for="descricao"> Descrição: </label>
         <textarea id="descricao" name="descricao" required></textarea>
 
+        <br><br>
+
         <label for="preco"> Preço: </label>
         <input type="number" id="preco" name="preco" step="0.01" min="0" required>
+        
+        <br><br>
 
         <label for="quantidade_estoque"> Quantidade em estoque: </label>
         <input type="number" id="quantidade_estoque" name="quantidade_estoque" min="0" required>
+        
+        <br><br>
 
         <label for="data_validade"> Data de validade: </label>
         <input type="date" id="data_validade" name="data_validade" required>
+
+        <br><br>
 
         <button type="submit"> Cadastrar </button>
 
     </form>
 
+    <br>
+
     <h2>Produtos cadastrados</h2>
 
-    <table>
+    <table border="1">
 
         <tr>
             <th>ID</th>
